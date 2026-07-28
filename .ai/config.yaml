@@ -1,0 +1,14 @@
+name: axel-os
+version: 1.0.0
+adapter: opencode
+agent_system: enabled
+skill_loader:
+  auto_detect: true
+  minimum_sufficient_set: true
+memory:
+  enabled: true
+checks:
+  before_commit: true
+  evidence_first: true
+extensions:
+  - core
