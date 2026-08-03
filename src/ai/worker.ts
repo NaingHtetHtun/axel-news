@@ -1,3 +1,5 @@
+require("dotenv").config({ path: ".env.local" });
+
 import { enrichUnenrichedArticles } from "./enrich";
 
 async function main() {

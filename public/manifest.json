@@ -1,0 +1,21 @@
+{
+  "name": "Axel News",
+  "short_name": "Axel News",
+  "description": "Myanmar IT news aggregation platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#030712",
+  "theme_color": "#2563eb",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["news", "technology"],
+  "lang": "en",
+  "dir": "ltr"
+}

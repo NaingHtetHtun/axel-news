@@ -1,6 +1,7 @@
 export type SourceConfig = {
   name: string;
   url: string;
+  rssUrl?: string; // RSS feed URL (preferred if available)
   selector: {
     articleLink: string;
     title: string;
@@ -14,6 +15,7 @@ export const sources: SourceConfig[] = [
   {
     name: "Myanmar Tech",
     url: "https://myanmar-tech.com",
+    rssUrl: "https://myanmar-tech.com/feed", // Common WordPress RSS path
     selector: {
       articleLink: "article a",
       title: "h1",
@@ -25,6 +27,7 @@ export const sources: SourceConfig[] = [
   {
     name: "IT Voice Myanmar",
     url: "https://itvoicemyanmar.com",
+    rssUrl: "https://itvoicemyanmar.com/feed", // Common WordPress RSS path
     selector: {
       articleLink: ".post-title a",
       title: ".entry-title",

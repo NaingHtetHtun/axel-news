@@ -101,10 +101,12 @@ Phased plan for a free pet project. Adjust order as needed; do not skip free-sta
 
 ## Later (optional)
 
-- Vector search on free Supabase if quota allows
-- Source management UI (admin)
-- RSS where sites provide it (lighter than full browser scrape)
-- PWA / offline reading
+- [x] Vector search on free Supabase if quota allows ✅ (DONE)
+- [x] Source management UI (admin) ✅ (DONE)
+- [x] RSS where sites provide it (lighter than full browser scrape) ✅ (DONE)
+- [x] PWA / offline reading ✅ (DONE)
+
+**Evidence reports**: `evidence-report-rss.md`, `evidence-report-vector-search.md`, `evidence-report-source-management.md`, `evidence-report-pwa.md`
 
 ## Explicit non-goals (unless you change policy)
 
