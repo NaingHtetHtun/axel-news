@@ -1,4 +1,4 @@
-import { supabase } from "./supabase";
+import { getSupabase } from "./supabase";
 
 export type Article = {
   id: string;
@@ -33,6 +33,7 @@ export async function getArticles({
   source?: string;
   language?: string;
 } = {}) {
+  const supabase = getSupabase();
   let query = supabase
     .from("articles")
     .select("*")
@@ -57,6 +58,7 @@ export async function getArticles({
 }
 
 export async function getArticleById(id: string) {
+  const supabase = getSupabase();
   const { data, error } = await supabase
     .from("articles")
     .select("*")
@@ -71,6 +73,7 @@ export async function getArticleById(id: string) {
 }
 
 export async function getArticleByUrl(url: string) {
+  const supabase = getSupabase();
   const { data, error } = await supabase
     .from("articles")
     .select("*")
@@ -85,6 +88,7 @@ export async function getArticleByUrl(url: string) {
 }
 
 export async function upsertArticle(article: ArticleInsert) {
+  const supabase = getSupabase();
   const { data, error } = await supabase
     .from("articles")
     .upsert(article, { onConflict: "url" })
@@ -107,6 +111,7 @@ export async function updateArticleEnrichment(
     enrichment_model: string;
   }
 ) {
+  const supabase = getSupabase();
   const { data, error } = await supabase
     .from("articles")
     .update({

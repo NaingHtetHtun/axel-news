@@ -63,33 +63,41 @@ Phased plan for a free pet project. Adjust order as needed; do not skip free-sta
 
 ---
 
-## Phase 3 — Scraper
+## Phase 3 — Scraper ✅ (DONE)
 
-- [ ] Playwright-based ingest script/worker
-- [ ] 1–3 seed Myanmar IT / tech sources (public pages)
-- [ ] Normalize + upsert by canonical URL
-- [ ] Document why worker > serverless Chromium
+**Evidence report**: `evidence-report-phase3.md`
 
-## Phase 4 — AI enrichment
+- [x] Playwright-based ingest script/worker
+- [x] 1–3 seed Myanmar IT / tech sources (public pages)
+- [x] Normalize + upsert by canonical URL
+- [x] Document why worker > serverless Chromium
 
-- [ ] Groq client (default)
-- [ ] Structured JSON: summary, sentiment, bias_notes
-- [ ] Gemini free fallback
-- [ ] Ollama local path for offline/dev
-- [ ] Idempotent re-enrich job
+## Phase 4 — AI enrichment ✅ (DONE)
 
-## Phase 5 — Product UI
+**Evidence report**: `evidence-report-phase4.md`
 
-- [ ] Feed list + article detail (reusable cards)
-- [ ] Loading skeletons + empty states
-- [ ] Framer Motion list/detail transitions
-- [ ] Myanmar / English content display basics
+- [x] Groq client (default)
+- [x] Structured JSON: summary, sentiment, bias_notes
+- [ ] Gemini free fallback (future)
+- [ ] Ollama local path for offline/dev (future)
+- [x] Idempotent re-enrich job
 
-## Phase 6 — Analytics & polish
+## Phase 5 — Product UI ✅ (DONE)
 
-- [ ] PostHog free: page views, article open, enrich success/fail
-- [ ] Basic error boundaries and rate-limit messaging
-- [ ] README "how to run fully free locally"
+**Evidence report**: `evidence-report-phase5.md`
+
+- [x] Feed list + article detail (reusable cards)
+- [x] Loading skeletons + empty states
+- [x] Framer Motion list/detail transitions
+- [x] Myanmar / English content display basics
+
+## Phase 6 — Analytics & polish ✅ (DONE)
+
+**Evidence report**: `evidence-report-phase6.md`
+
+- [x] PostHog free: page views, article open, enrich success/fail
+- [x] Basic error boundaries and rate-limit messaging
+- [x] README "how to run fully free locally"
 
 ## Later (optional)
 

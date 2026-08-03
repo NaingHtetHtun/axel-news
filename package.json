@@ -6,13 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scrape": "tsx src/scraper/index.ts",
+    "scrape:install": "playwright install chromium",
+    "enrich": "tsx src/ai/worker.ts"
   },
   "dependencies": {
     "@clerk/nextjs": "^7.6.4",
     "@supabase/supabase-js": "^2.111.0",
     "framer-motion": "^12.43.0",
     "next": "16.2.12",
+    "playwright": "^1.62.1",
+    "posthog-js": "^1.409.5",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
@@ -24,6 +29,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
     "tailwindcss": "^4",
+    "tsx": "^4",
     "typescript": "^5"
   }
 }
