@@ -50,11 +50,18 @@ Phased plan for a free pet project. Adjust order as needed; do not skip free-sta
 
 ---
 
-## Phase 2 — Data & auth
+## Phase 2 — Data & auth ✅ (DONE)
 
-- [ ] Supabase project (free) + articles table
-- [ ] Clerk free app + protected optional routes (e.g. saved items)
-- [ ] Server-side data access patterns
+**Evidence report**: `evidence-report-phase2.md`
+
+- [x] Supabase client setup (`src/lib/supabase.ts`)
+- [x] Articles table schema (`supabase/migrations/001_articles.sql`)
+- [x] Server-side data access functions (`src/lib/articles.ts`)
+- [x] Clerk auth setup (`src/lib/clerk-provider.tsx`)
+- [x] Protected saved items route (`src/app/saved/page.tsx`)
+- [x] Env example updated (`.env.example`)
+
+---
 
 ## Phase 3 — Scraper
 
