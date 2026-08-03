@@ -2,20 +2,53 @@
 
 Phased plan for a free pet project. Adjust order as needed; do not skip free-stack rules.
 
-## Phase 0 — Docs & agent workspace ✅ (current)
+## Workflow Rule
 
-- [x] `AGENTS.md`, `README.md`
-- [x] Architecture, free-stack, usage, roadmap
-- [x] Context briefs under `docs/context/`
-- [x] Grok skills: free-stack, scraper, ai-news, ui (+ references)
+**All phases must be implemented using axel-agent workflow.** See `AGENTS.md` for details.
 
-## Phase 1 — App shell
+- `/new-feature` → agent-router → skill-loader → feature-development → evidence-report
+- Never manually create code files
+- Every phase produces `evidence-report.md`
 
-- [ ] `create-next-app` (TypeScript, App Router)
-- [ ] Tailwind CSS setup + base theme tokens
-- [ ] Framer Motion dependency
-- [ ] Layout shell: header, feed placeholder, footer
-- [ ] Env example file (no real secrets)
+---
+
+## Phase 0 — Docs & agent workspace ✅ (DONE)
+
+### 0a: Core docs ✅ (DONE)
+
+- [x] `AGENTS.md`
+- [x] `docs/architecture.md`
+- [x] `docs/usage.md`
+- [x] `docs/roadmap.md`
+- [x] `docs/project-guide.md`
+
+### 0b: Context briefs ✅ (DONE)
+
+- [x] `docs/free-stack.md` (paid → free mapping)
+- [x] `docs/context/product.md`
+- [x] `docs/context/stack.md`
+- [x] `docs/context/scraping.md`
+- [x] `docs/context/ai-pipeline.md`
+- [x] `docs/context/ui-conventions.md`
+
+### 0c: Axel agent config ✅ (DONE)
+
+- [x] `.ai/` folder installed via `npx` (axel-agent default config)
+- [x] Project-specific docs in `docs/` to match agent requirements
+
+---
+
+## Phase 1 — App shell ✅ (DONE)
+
+**Evidence report**: `evidence-report-phase1.md`
+
+- [x] `create-next-app` (TypeScript, App Router)
+- [x] Tailwind CSS setup + base theme tokens
+- [x] Framer Motion dependency
+- [x] Layout shell: header, feed placeholder, footer
+- [x] Env example file (no real secrets)
+
+---
 
 ## Phase 2 — Data & auth
 
@@ -49,7 +82,7 @@ Phased plan for a free pet project. Adjust order as needed; do not skip free-sta
 
 - [ ] PostHog free: page views, article open, enrich success/fail
 - [ ] Basic error boundaries and rate-limit messaging
-- [ ] README “how to run fully free locally”
+- [ ] README "how to run fully free locally"
 
 ## Later (optional)
 

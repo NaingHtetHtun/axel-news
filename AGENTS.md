@@ -17,6 +17,29 @@ This pet project targets **100% free** tooling. Do **not** default to paid servi
 
 If the user **explicitly** asks for a paid tool, acknowledge cost and document the exception. Otherwise keep the free stack.
 
+## Axel-Agent Workflow (mandatory for all code)
+
+**Every roadmap phase MUST use the axel-agent workflow.** Do NOT manually create code files.
+
+### Required workflow
+
+1. Start with `/new-feature` command
+2. Let `agent-router.md` determine the primary agent
+3. Let `skill-loader.md` select required skills
+4. Follow `feature-development` workflow
+5. Return `evidence-report.md` with verification gates
+
+### What the workflow enforces
+
+- Skill load plan before editing
+- Small verifiable slices
+- Evidence-based completion
+- Format, lint, test, security, performance checks
+
+### Why this matters
+
+The axel-agent ensures consistency, quality, and traceability across all code changes. Skipping the workflow produces undocumented, untested code.
+
 ## Where to read more
 
 | Need | File |
@@ -32,10 +55,10 @@ If the user **explicitly** asks for a paid tool, acknowledge cost and document t
 
 ## Skills (load when relevant)
 
-- `axel-free-stack` — choosing tools, deps, APIs
-- `axel-scraper` — news ingest / Playwright
-- `axel-ai-news` — summary, bias, sentiment
-- `axel-ui` — Tailwind + Framer Motion components
+- `axel-free-stack` — choosing tools, deps, APIs (see `docs/free-stack.md`)
+- `axel-scraper` — news ingest / Playwright (see `docs/context/scraping.md`)
+- `axel-ai-news` — summary, bias, sentiment (see `docs/context/ai-pipeline.md`)
+- `axel-ui` — Tailwind + Framer Motion components (see `docs/context/ui-conventions.md`)
 
 ## Coding defaults
 

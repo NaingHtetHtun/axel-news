@@ -11,4 +11,4 @@ checks:
   before_commit: true
   evidence_first: true
 extensions:
-  - core
+  - react
